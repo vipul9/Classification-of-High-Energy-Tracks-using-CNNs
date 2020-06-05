@@ -1,4 +1,4 @@
-# Classifying High Energy Particles Using Convolutional Neural Networks
+# Classification High Energy Particles Using Convolutional Neural Networks
 ## Overview
 This is the code for training and testing on image data for classification of electrons in a high energy physics (HEP) experiment.
 ## The Large Hadron Collider
