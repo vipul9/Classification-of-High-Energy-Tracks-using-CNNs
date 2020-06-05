@@ -13,20 +13,18 @@ The interaction of the particle with the different layers of the detector is use
 
 ![cms-reconstruction](https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/particle_reco.gif)
 
-This work uses convolutional neural networks to classify electrons using their signature in the calorimeters. Data from the CMS detector is used for this work.
-
 ## High Energy Tracks Classification
-In proton-proton collision huge amount of data gets created. The collison rate is far more than ability to write data. Ideal case is to store all the data but it is not possible due to hardware limitations. To takle this problem, there is a trigger system in place. This trigger system help to chose. This process of choosing the data is called triggering. Trigers are energy sensitive. If produces in an event has energy above the threshold, then it keeps that event.
+In proton-proton collision huge amount of data gets created. The collision rate is far more than the ability to write data. The ideal case is to store all the data, but it is not possible due to hardware limitations. To tackle this problem, there is a trigger system in place. This trigger system helps to choose. This process of selecting the data is called triggering. Triggers are energy sensitive. If a particle produced in an event have energy above the threshold, then the trigger keeps that event.
 
-Moving charged particles bend in the presense of magnetic field. Tracker is a unit in detector that reconstruct the particle trajectory. Reconstruction of tracks is an crucial process because it gives valuable information about energy of particle and charge of the particle. High energy particles are seldom created in nature hence they make interesting point of study. High Energy particles tend to have straight line path in magnetic field. This work shows the novel way of triggering over the events with high energy tracks using Convolutional neural networks (CNNs). 
+Moving charged particles bend in the presence of a magnetic field. A tracker is a unit in the CMS detector that reconstruct the particle trajectory. Reconstruction of tracks is a crucial process because it gives valuable information about the particle's charge and energy. High energy particles are seldom created in nature; hence they make an interesting point of the study. High Energy particles tend to have a straight-line path in a magnetic field. This work shows the novel way of triggering over the events with high energy tracks using Convolutional neural networks (CNNs). 
 
-This work follows three models namely 2D toy tracker model, 3D toy tracker model and finally CMS tracker. 
+This work studies two models, namely 2D toy tracker model, and CMS tracker.
 
 # 2D Toy Tracker Model
 ## 100 Tracks case:
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/100trk_100per_hpt.png" width="400"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/100trk_100per_lpt.png" width="400"/>
 
-Note that the track in red is the high energy particle's track and colour is just for representation. Actual images used for training and testing of neural networks were grayscale images. One thing to notice here is that the points are not aligned. This is because we never get et point of intersection from detector due to observational error.
+Note that the red track is the high energy particle's track, and the color is just for representation. Actual images used for training and testing of neural networks were grayscale images. One thing to notice here is that the points are not aligned. This is because we never get the exact position of intersection from the detector due to observational error.
 
 Below is the output histogram and ROC of a convolutional neural network.
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/histo_100trk_100per.png" width="425"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/ROC_100trk_100per.png" width="425"/>
