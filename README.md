@@ -22,8 +22,8 @@ Moving charged particles bend in the presense of magnetic field. Tracker is a un
 
 This work follows three models namely 2D toy tracker model, 3D toy tracker model and finally CMS tracker. 
 
-## 2D Toy Tracker Model
-# 100 Tracks case:
+# 2D Toy Tracker Model
+## 100 Tracks case:
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/100trk_100per_hpt.png" width="400"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/100trk_100per_lpt.png" width="400"/>
 
 Note that the track in red is the high energy particle's track and colour is just for representation. Actual images used for training and testing of neural networks were grayscale images. One thing to notice here is that the points are not aligned. This is because we never get et point of intersection from detector due to observational error.
@@ -31,14 +31,14 @@ Note that the track in red is the high energy particle's track and colour is jus
 Below is the output histogram and ROC of a convolutional neural network.
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/histo_100trk_100per.png" width="425"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/ROC_100trk_100per.png" width="425"/>
 
-# 200 tracks case:
+## 200 tracks case:
 Total 200 tracks per event.  
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/high_200trk_100per.png" width="425"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/low_200trk_100per.png" width="425"/>
 
 Below is the result of the CNN. Behaviour of ROC curve is expected. As complexity goes up, accuracy goes down. 
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/histo_200trk_100per.png" width="425"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/ROC_200trk_100per.png" width="425"/>
 
-## Simulated Data From CMS 
+# Simulated Data From CMS 
 
 Image of tracker after proton-proton collsion.
 
@@ -48,6 +48,6 @@ Below is the output histogram of a convolutional neural network after training a
 
 <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/histo_brrl_exl.png" width="425"/> <img src="https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/Images/ROC_brrl_exl.png" width="425"/>
 
-## Instructions
+# Instructions
 
 All the information used for creating the images, i.e., the spatial coordinates, and energy of particles come from CERN lxplus servers. Data is generated using CMS software (CMSSW). Sample code for this conversion can be found in CMSSW repository. Finally, these images become input to a convolutional neural network implemented using Tensorflow. The code for this is (https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs/blob/master/cnn_model.py). 
