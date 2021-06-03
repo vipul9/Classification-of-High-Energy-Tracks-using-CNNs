@@ -1,32 +1,5 @@
 
-""" Build an Image Dataset in TensorFlow.
-For this example, you need to make your own set of images.
-We will show 2 different ways to build that dataset:
-- From a root folder, that will have a sub-folder containing images for each class
-    ```
-    ROOT_FOLDER
-       |-------- SUBFOLDER (CLASS 0)
-       |             |
-       |             | ----- image1.jpg
-       |             | ----- image2.jpg
-       |             | ----- etc...
-       |             
-       |-------- SUBFOLDER (CLASS 1)
-       |             |
-       |             | ----- image1.jpg
-       |             | ----- image2.jpg
-       |             | ----- etc...
-    ```
-- From a plain text file, that will list all images with their class ID:
-    ```
-    /path/to/image/1.jpg CLASS_ID
-    /path/to/image/2.jpg CLASS_ID
-    /path/to/image/3.jpg CLASS_ID
-    /path/to/image/4.jpg CLASS_ID
-    etc...
-    ```
-Below, there are some parameters that you need to change (Marked 'CHANGE HERE'), 
-such as the dataset path.
+"""
 Author: Vipul Pawar
 Project: https://github.com/vipul9/Classification-of-High-Energy-Tracks-using-CNNs
 """
@@ -117,9 +90,9 @@ def read_images(dataset_path, mode, batch_size):
     return X, Y
 
 # -----------------------------------------------
-# THIS IS A CLASSIC CNN (see examples, section 3)
+# CNN
 # -----------------------------------------------
-# Note that a few elements have changed (usage of queues).
+
 
 # Parameters
 learning_rate = 0.001
